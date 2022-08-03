@@ -22,8 +22,7 @@ export default function Account() {
         return <Loading isVisible={true} text="Cargando..."/>
     }
     
-  return <UserGuest/>
-  // login ? <UserLogged/> : <UserGuest/>
+  return login ? <UserLogged/> : <UserGuest/>
 }
 
 const styles = StyleSheet.create({})
